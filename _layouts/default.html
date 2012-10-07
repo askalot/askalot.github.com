@@ -6,21 +6,62 @@
     <title>{% if page.title %}{{ page.title }} &mdash; {% endif %}Arunan Skanthan</title>
 
     <meta name="author" content="Arunan Skanthan">
-    <meta name="description" content="Thoughts and learnings of Arunan Skanthan.">
+    <meta name="description" content="Thoughts, creations and learnings of Arunan Skanthan.">
 
     <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="assets/styles/vendor/normalize.css">
-    <link rel="stylesheet" href="assets/styles/main.css">
-    <script src="assets/scripts/vendor/modernizr-2.6.2.min.js"></script>
+    <link rel="stylesheet" href="/assets/styles/vendor/normalize.css">
+    <link rel="stylesheet" href="/assets/styles/main.css">
+    <script src="/assets/scripts/vendor/modernizr-2.6.2.min.js"></script>
   </head>
   <body>
-    {{ content }}
+    <div class="page">
+      <header class="header row">
+        <div class="title">Ãrunan Skanthan</div>
 
-    <a href="http://github.com/askalot"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" /></a>
+        <nav class="nav row">
+          <ul class="col one-of-one">
+            <li><a href="/">Home</a></li>
+            <li><a href="/work/">Work</a></li>
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/about/">About</a></li>
+            <li><a href="/contact/">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <div class="row">
+        <aside class="sidebar col one-of-three">
+            <img src="https://secure.gravatar.com/userimage/57841/44d478eba83e80bf88284b1cd48b4146?size=150" alt="" class="me" />
+            <p>Web designer and developer. Geek. Makes music, videos and food, and loves to travel.</p>
+            <a href="/contact/" class="btn one-of-one">Contact</a>
+
+            <div class="social">
+              <a href="http://twitter.com/askalot" class="col one-of-two">
+                <img src="/assets/images/icons/twitter.png" alt="" /> Twitter</a>
+              <a href="http://dribbble.com/askalot" class="col one-of-two">
+                <img src="/assets/images/icons/dribbble.png" alt="" /> Dribbble</a>
+              <a href="http://askalot.tumblr.com/ " class="col one-of-two">
+                <img src="/assets/images/icons/tumblr.png" alt="" /> Tumblr</a>
+              <a href="http://www.linkedin.com/in/arunanskanthan" class="col one-of-two">
+                <img src="/assets/images/icons/linkedin.png" alt="" /> Linkedin</a>
+            </div>
+        </aside>
+
+        <div class="content col two-of-three">
+          {{ content }}
+
+          <footer class="footer">
+            <p><a href="http://creativecommons.org/licenses/by-sa/3.0/">Copyleft</a> &copy; 2005&ndash;2012 Arunan Skanthan.</p>
+          </footer>
+        </div>
+      </div><!-- /.row -->
+    </div><!-- /.page -->
+
+    <a href="http://github.com/askalot"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub" /></a>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="assets/scripts/vendor/jquery-1.8.2.min.js"><\/script>')</script>
-    <script src="assets/scripts/main.js"></script>
+    <script>window.jQuery || document.write('<script src="/assets/scripts/vendor/jquery-1.8.2.min.js"><\/script>')</script>
+    <script src="/assets/scripts/main.js"></script>
 
     <script>
       var _gaq=[['_setAccount',"UA-463084-3"],['_trackPageview']];
