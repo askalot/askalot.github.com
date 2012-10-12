@@ -15,6 +15,7 @@ body, h1, h2, h3, h4, h5, input, textarea {
   font-size:18px;
   line-height:1.7;
   font-family: Helvetica, sans-serif;
+  font-weight: 300;
 }
 
 /*h1, h2, h3, h4, h5 {
@@ -101,7 +102,6 @@ h3 {
 
 .header {
   background: #222;
-  font-weight: 300;
 }
 
 /* ==========================================================================
@@ -166,7 +166,6 @@ h3 {
   max-width: 320px;
   text-align: center;
   /*position: fixed;*/
-  font-weight: 300;
   font-size: 14px;
   width: 250px;
 }
@@ -204,6 +203,42 @@ h3 {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   /*margin-left: 320px;*/
   max-width: 640px;
+}
+
+/* ==========================================================================
+   Posts
+   ========================================================================== */
+
+.posts {
+  list-style: none;
+  padding: 0;
+}
+
+.post {
+}
+
+.posts a {
+  text-decoration: none;
+  color: #c33;
+  font-size: 1.2em;
+}
+
+.post-date {
+  color: #999;
+  float: right;
+}
+
+.posts li {
+  border-bottom: 1px solid #ddd;
+}
+
+.posts li:last-of-type {
+  border-bottom: none;
+}
+
+.post-meta {
+  font-size: 0.9em;
+  color: #999;
 }
 
 /* ==========================================================================
@@ -307,4 +342,73 @@ h3 {
   h3 {
       page-break-after: avoid;
   }
+}
+
+
+/* TO CLEANUP */
+#work ul {
+    width: 100%;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#work li {
+    float: left;
+    height: 13em;
+    /*margin: 0.625em 0 1.875em 3.125em;*/
+    margin: 0 1.064% 1.875em;
+    padding: 0.375em;
+    /*width: 14.8em;*/
+    width: 46%;
+    max-width: 275px;
+    background: rgba(255,255,255,0.3);
+    background: rgba(0,0,0,0.05);
+    border: 1px solid #ccc;
+    border: 1px solid rgba(255,255,255,0.3);
+    border: 1px solid rgba(0,0,0,0.1);
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+#work li:hover {
+    background: rgba(255,255,255,0.8);
+}
+
+#work img {
+    width: 100%;
+}
+
+#work .work-description {
+    display: block;
+}
+
+#work .work-description strong {
+    color: #666;
+    float: left;
+    text-transform: uppercase;
+    text-shadow: 0 1px 1px #fff;
+}
+
+#work .work-description em {
+    clear: both;
+    color: #a40000;
+    float: left;
+}
+
+.download {
+    /*display: none;*/
+  float: right;
+}
+
+#work li a.work-description {
+  cursor: default;
+}
+
+#work .btn {
+  background: #666;
+  padding: 0.05em 0.4em;
+  margin-top: 0.5em;
 }
